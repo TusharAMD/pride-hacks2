@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "pride-hacks-2",
+  "version": "0.1.0",
+  "browser_action": {
+    "default_icon": "https://i.ibb.co/gw2MqYj/image.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["script.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}

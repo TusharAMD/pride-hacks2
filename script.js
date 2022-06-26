@@ -32,7 +32,7 @@ function replaceText(element) {
 		console.log(element)
 		if (data['value']=="Offensive"){
 		const addNewElement = document.createElement('span')
-		addNewElement.innerHTML = '<span class="blocktext">'
+		addNewElement.innerHTML = '<span class="blocktext">[REDACTED]</span>'
 		element.replaceWith(addNewElement)
 		}
 	  });

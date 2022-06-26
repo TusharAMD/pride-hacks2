@@ -30,9 +30,11 @@ function replaceText(element) {
 	  .then(data => {
 		console.log(data['value']); // JSON data parsed by `data.json()` call
 		console.log(element)
+		if (data['value']=="Offensive"){
 		const addNewElement = document.createElement('span')
 		addNewElement.innerHTML = '<span class="blocktext">'
 		element.replaceWith(addNewElement)
+		}
 	  });
 	}
   }
